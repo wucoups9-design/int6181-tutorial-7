@@ -15,7 +15,7 @@ def validate_password(password):
     for char in password:
         if char.isspace():
             print("Password must not contain spaces")
-            return False
+            return True
         
         if char.isupper():
             has_uppercase = True
